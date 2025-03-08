@@ -1,0 +1,332 @@
+*{
+    padding: 0px;
+    margin: 0px;
+   
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#6B4F4F;
+    position: fixed;
+    padding-right: 20px;
+    padding-left: 20px;
+    width: 100%;
+    font-family: 'Playfair Display', serif;  
+}
+h3{
+    font-size: 50px;
+    color:#EFE1D1;
+}
+.list ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    padding-right: 30px;
+
+}
+a{
+    text-decoration: none;
+    color:#EFE1D1;
+    font-size: larger;
+}
+li{
+    list-style: none;
+}
+.list ul a:hover{
+    color: #6B4F4F;
+}
+.Home {
+    background-image: url('pastry-background.jpg'); /* Add a background image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #6B4F4F; /* Deep mocha for text */
+}
+
+.hero-content h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-family: 'Lora', serif;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.hero-content button {
+    background-color: #6B4F4F; /* Deep mocha */
+    color: #EFE1D1; /* Toasted almond */
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hero-content button:hover {
+    background-color: #B8A99A; /* Warm taupe */
+} 
+.customize-cake {
+     width: 80%;
+    max-width: 600px; /* Optional: Set a max-width for better readability */
+    background-color: #EFE1D1; /* Toasted almond */
+    text-align: center;
+    border-radius: 10px; /* Slightly rounded corners */
+    padding: 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
+.custombody {
+    display: grid;
+    place-items: center; /* Center both horizontally and vertically */
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove default margin */
+    background-color: #F5F0E6; /* Soft cream (optional, for consistency) */
+}
+.customize-cake h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #6B4F4F; /* Deep mocha */
+    margin-bottom: 40px;
+}
+
+.steps .step {
+    margin-bottom: 30px;
+}
+
+.steps h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    color: #6B4F4F; /* Deep mocha */
+    margin-bottom: 20px;
+}
+
+.options button {
+    background-color: #EFE1D1; /* Toasted almond */
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    color: #6B4F4F; /* Deep mocha */
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.options button:hover {
+    background-color: #B8A99A; /* Warm taupe */
+}
+
+.summary {
+    background-color: #EFE1D1; /* Toasted almond */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.summary h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: #6B4F4F; /* Deep mocha */
+    margin-bottom: 20px;
+}
+
+.summary p {
+    font-family: 'Lora', serif;
+    font-size: 1.2rem;
+    color: #6B4F4F; /* Deep mocha */
+    margin: 10px 0;
+}
+
+#order-now {
+    background-color: #6B4F4F; /* Deep mocha */
+    color: #EFE1D1; /* Toasted almond */
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#order-now:hover {
+    background-color: #B8A99A; /* Warm taupe */
+}
+/* Login Container */
+.login-container {
+    background-color: #EFE1D1; /* Toasted almond */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    margin: 0 auto; /* Center the container */
+}
+
+.login-container h2 {
+    color: #EFE1D1; /* Deep mocha */
+    margin-bottom: 20px;
+    font-family: 'Playfair Display', serif; /* Match your navbar font */
+    font-size: 2.5rem;
+}
+
+/* Form Styles */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    color: #6B4F4F; /* Deep mocha */
+    margin-bottom: 5px;
+    font-family: 'Lora', serif; /* Match your body font */
+    font-size: 1.2rem;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #B8A99A; /* Warm taupe */
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #F5F0E6; /* Soft cream */
+    color: #6B4F4F; /* Deep mocha */
+    font-family: 'Raleway', sans-serif; /* Match your button font */
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #6B4F4F; /* Deep mocha */
+}
+
+/* Button Styles */
+.login-container button {
+    width: 40%;
+    padding: 5px;
+    background-color: #6B4F4F; /* Deep mocha */
+    color: #EFE1D1; /* Toasted almond */
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif; /* Match your button font */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+
+/* Sign Up Link */
+.login-container p {
+    margin-top: 15px;
+    color: #B8A99A; /* Deep mocha */
+    font-family: 'Lora', serif; /* Match your body font */
+    font-size: 1.1rem;
+}
+
+.login-container p a {
+    color: #6B4F4F; /* Deep mocha */
+    text-decoration: none;
+    font-weight: 500;
+} 
+/* Sign Up Container */
+.signup-container {
+    background-color: #EFE1D1; /* Toasted almond */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    margin: auto; /* Center the container */
+    
+}
+
+.signup-container h2 {
+    color: #6B4F4F; /* Deep mocha */
+    margin-bottom: 20px;
+    font-family: 'Playfair Display', serif; /* Match your navbar font */
+    font-size: 2.5rem;
+}
+
+/* Form Styles */
+.signup-container .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.signup-container .form-group label {
+    display: block;
+    color: #6B4F4F; /* Deep mocha */
+    margin-bottom: 5px;
+    font-family: 'Lora', serif; /* Match your body font */
+    font-size: 1.2rem;
+}
+
+.signup-container .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #B8A99A; /* Warm taupe */
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #F5F0E6; /* Soft cream */
+    color: #6B4F4F; /* Deep mocha */
+    font-family: 'Raleway', sans-serif; /* Match your button font */
+}
+
+.signup-container .form-group input:focus {
+    outline: none;
+    border-color: #6B4F4F; /* Deep mocha */
+}
+
+/* Button Styles */
+.signup-container button {
+    width: 100%;
+    padding: 15px 30px;
+    background-color: #6B4F4F; /* Deep mocha */
+    color: #EFE1D1; /* Toasted almond */
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif; /* Match your button font */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.signup-container button:hover {
+    background-color: #B8A99A; /* Warm taupe */
+}
+
+/* Login Link */
+.signup-container p {
+    margin-top: 15px;
+    color: #6B4F4F; /* Deep mocha */
+    font-family: 'Lora', serif; /* Match your body font */
+    font-size: 1.1rem;
+}
+
+.signup-container p a {
+    color: #6B4F4F; /* Deep mocha */
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.signup-container p a:hover {
+    text-decoration: underline;
+}
+
+

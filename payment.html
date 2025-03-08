@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment - MyCakeLine</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to right, #e0c3fc, #8ec5fc);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+        .payment-container {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 500px;
+        }
+        h1 {
+            color: #6a0dad;
+            margin-bottom: 20px;
+        }
+        .input-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+        }
+        .button {
+            background-color: #6a0dad;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #4b0082;
+        }
+    </style>
+</head>
+<body>
+    <div class="payment-container">
+        <h1>Complete Your Payment</h1>
+        <form id="paymentForm">
+            <div class="input-group">
+                <label for="cardNumber">Card Number</label>
+                <input type="text" id="cardNumber" placeholder="1234 5678 9012 3456">
+            </div>
+            <div class="input-group">
+                <label for="expiryDate">Expiry Date</label>
+                <input type="text" id="expiryDate" placeholder="MM/YY">
+            </div>
+            <div class="input-group">
+                <label for="cvv">CVV</label>
+                <input type="password" id="cvv" placeholder="123">
+            </div>
+            <div class="input-group">
+                <label for="cardHolder">Cardholder Name</label>
+                <input type="text" id="cardHolder" placeholder="John Doe">
+            </div>
+            <button type="button" class="button" onclick="submitPayment()">Pay Now</button>
+        </form>
+    </div>
+
+    <script>
+        function submitPayment() {
+            var cardNumber = document.getElementById('cardNumber').value.trim();
+            var expiryDate = document.getElementById('expiryDate').value.trim();
+            var cvv = document.getElementById('cvv').value.trim();
+            var cardHolder = document.getElementById('cardHolder').value.trim();
+
+            if (cardNumber === "" || expiryDate === "" || cvv === "" || cardHolder === "") {
+                if (confirm("Some fields are empty. Do you still want to proceed?")) {
+                    window.location.href = 'thankyou.html';
+                }
+            } else {
+                window.location.href = 'thankyou.html';
+            }
+        }
+    </script>
+</body>
+</html>
+
