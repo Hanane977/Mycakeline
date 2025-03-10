@@ -135,7 +135,7 @@
   <div class="step" id="step4">
     <h2>Write Your Cake Message</h2>
     <div class="input-group"><textarea id="cakeMessage" rows="3" placeholder="Write your message..."></textarea></div>
-    <p><strong>Total Price:</strong> <span id="totalPrice">0 DZD</span></p>
+   
     <button class="button" onclick="prevStep()">Previous</button>
     <button class="button" onclick="submitOrder()">Submit Order</button>
   </div>
@@ -176,9 +176,6 @@
     updatePrice();
   }
 
-  function updatePrice() {
-    document.getElementById("totalPrice").innerText = order.price + " DZD";
-  }
 
   function submitOrder() {
     order.message = document.getElementById("cakeMessage").value;
